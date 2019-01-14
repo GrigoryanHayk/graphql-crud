@@ -1,0 +1,68 @@
+.form-group {
+    margin-top: 15px;
+    display: block;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666666;
+    font-size: 14px;
+}
+
+.form-header {
+    margin-bottom: 30px;
+}
+
+.form-control {
+    min-width: 250px;
+    padding: 10px 15px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    color: #666666;
+}
+
+.form-control__buttons {
+    padding: 10px 25px;
+    width: 100%;
+    font-size: 16px;
+    border: 1px solid #1B3A65;
+    background: #1B3A65;
+    color: #ffffff;
+    margin: 25px 0;
+    outline: none;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    cursor: pointer;
+}
+.form-control__error-bar {
+    margin: 15px 0;
+}
+.form-control__error-bar > p {
+    color: #ff0000;
+}
+
+.form-control__link {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.form-control__link:hover {
+    text-decoration: none;
+}
+
+.form-control__textarea {
+    resize: vertical;
+    min-height: 100px;
+    max-height: 250px;
+}
+
+.posts-form {
+    margin: 0 auto;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

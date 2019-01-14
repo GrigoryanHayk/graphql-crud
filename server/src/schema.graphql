@@ -1,0 +1,47 @@
+#directives
+directive @requireAuth on FIELD_DEFINITION
+
+enum Role {
+    ADMIN
+    USER
+}
+
+#Queries
+type Query {
+  posts: [Post!]! @requireAuth
+  post(id: String!): Post! @requireAuth
+}
+
+type User {
+    id: String!
+    name: String!
+    firstName: String!
+    lastName: String!
+    email: String!
+    password: String!
+    role: String!
+    status: String!
+}
+
+type AuthPayload {
+    token: String!
+}
+
+type Post {
+  id: ID!
+  title: String!
+  description: String!
+  text: String!
+  createdAt: String!
+  updatedAt: String!
+}
+
+# Mutations
+type Mutation {
+    signup(firstName: String!, lastName: String!, email: String!, password: String!, confirmPassword: String!): AuthPayload!
+    login(email: String!, password: String!): AuthPayload!
+    createPost(title: String!, description: String!, text: String!): Post! @requireAuth
+    updatePost(id: String!, title: String!, description: String!, text: String!): Post! @requireAuth
+    deletePost(id: String!): [Post!]! @requireAuth
+}
+

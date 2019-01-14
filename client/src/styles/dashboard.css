@@ -1,0 +1,37 @@
+.dashboard-header {
+    background-color: #1B3A65;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.dashboard-header__link {
+    color: #ffffff;
+    text-decoration: none;
+    border-right: 1px solid #ffffff;
+    border-left: 1px solid #ffffff;
+    padding: 15px 25px;
+}
+
+.dashboard-header__signout {
+    position: absolute;
+    right: 0;
+}
+
+.dashboard-header__link--signout {
+    text-decoration: underline;
+    color: #ffffff;
+    border-right: 1px solid #ffffff;
+    border-left: 1px solid #ffffff;
+    padding: 15px 25px;
+    cursor: pointer;
+}
+
+.dashboard-content {
+    padding: 0 15px;
+}
+
+.posts-content {
+    margin: 15px 25px;
+}
