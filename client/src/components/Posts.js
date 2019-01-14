@@ -8,8 +8,6 @@ import "../styles/form.css";
 
 class Posts extends Component {
     onRemoveHandler(data) {
-        console.log(data, 'onremove works');
-
         if (data && data.deletePost) {
             this.props.client.resetStore();
         }
@@ -27,9 +25,6 @@ class Posts extends Component {
             <Query query={GET_POSTS}>
             {
                 ({loading, error, data}) => {
-                    console.log('data coming', loading, error, data);
-
-
                     if (loading) return <div>Loading Posts ...</div>
                     if (error) return <div>Error fetching Posts</div>
 

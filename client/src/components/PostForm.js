@@ -74,8 +74,6 @@ class PostForm extends Component {
         const locationPathName = this.props.location.pathname;
         const isUpdate = locationPathName.includes("update");
 
-        console.log(this.props, 'PostForm');
-
         return (
             <div className="posts-form">
                 <h3 className="form-header">{ isUpdate ? 'Update Post' : 'Create Post' }</h3>
